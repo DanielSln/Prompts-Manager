@@ -122,10 +122,10 @@ function load() {
 function createPromptItem(prompt) {
   return `
       <li class="prompt-item" data-id="${prompt.id}" data-action="select">
-      <div class="prompt-item-content">
-        <span class="prompt-item-title">${prompt.title}</span>
-        <span class="prompt-item-description">${prompt.content}</span>
-      </div>
+        <div class="prompt-item-content">
+          <span class="prompt-item-title">${prompt.title}</span>
+          <span class="prompt-item-description">${tmp.textContent}</span>
+        </div>
 
       <button class="btn-icon" title="Remover">
         <img
@@ -169,6 +169,7 @@ elements.list.addEventListener("click", function (event) {
   if (!item) return;
 
   const id = item.getAttribute("data-id");
+  state.selectedId = id;
 
   if (removeBtn) {
     //Remover o prompt
