@@ -154,6 +154,10 @@ function newPrompt() {
   elements.promptTitle.focus();
 }
 
+function copySelected () {
+  
+}
+
 // Eventos
 elements.btnSave.addEventListener("click", save);
 elements.btnNew.addEventListener("click", newPrompt);
