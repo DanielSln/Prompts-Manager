@@ -165,14 +165,14 @@ body {
   position: fixed;
   top: 24px;
   left: 24px;
-
-  z-index: 1101;
+  z-index: 0;
   background-color: var(--gray-800);
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 .sidebar {
+  z-index: 1000;
   width: 400px;
   height: 100vh;
   display: flex;
