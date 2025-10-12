@@ -162,10 +162,14 @@ body {
 }
 
 .open-toggle {
-  position: absolute;
-  top: 62px;
-  left: 62px;
-  display: none;
+  position: fixed;
+  top: 24px;
+  left: 24px;
+
+  z-index: 1101;
+  background-color: var(--gray-800);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 .sidebar {
@@ -177,6 +181,13 @@ body {
   padding: 32px;
   background-color: var(--gray-800);
   border-right: 0.5px solid var(--gray-700);
+}
+
+.sidebar.collapsed {
+  width: 0;
+  padding: 0;
+  opacity: 0;
+  transform: translateX(0);
 }
 
 .sidebar-header {
