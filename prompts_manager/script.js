@@ -157,12 +157,14 @@ function newPrompt() {
 function copySelected() {
   try {
     const content = elements.promptContent;
-    return navigator.clipboard.writeText(content.innerHTML);
+
+    if (!navigator.clipboard) {
+      return alert("Não foi possível copiar para a área de transferência");
+    }
+    return navigator.clipboard.writeText(content.innerText);
 
     alert("Conteúdo copiado para a área de transferência");
-  } catch (error) {
-    
-  }
+  } catch (error) {}
 }
 
 // Eventos
