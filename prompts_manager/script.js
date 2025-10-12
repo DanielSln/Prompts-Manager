@@ -79,7 +79,7 @@ function save() {
 
   if (state.selectedId) {
     //Editando um prompt existente
-    const existingPrompt = state.prompts.find((p) => p.id === state.selectedId)
+    const existingPrompt = state.prompts.find((p) => p.id === state.selectedId);
 
     if (existingPrompt) {
       existingPrompt.title = title || "Sem Título";
@@ -154,13 +154,21 @@ function newPrompt() {
   elements.promptTitle.focus();
 }
 
-function copySelected () {
-  
+function copySelected() {
+  try {
+    const content = elements.promptContent;
+    return navigator.clipboard.writeText(content.innerHTML);
+
+    alert("Conteúdo copiado para a área de transferência");
+  } catch (error) {
+    
+  }
 }
 
 // Eventos
 elements.btnSave.addEventListener("click", save);
 elements.btnNew.addEventListener("click", newPrompt);
+elements.btnCopy.addEventListener("click", copySelected);
 
 elements.search.addEventListener("input", function (event) {
   renderList(event.target.value);
