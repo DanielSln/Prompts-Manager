@@ -304,7 +304,6 @@ body {
 @media (max-width: 950px) {
   .open-toggle {
     display: block;
-    z-index: 0;
     top: 38px;
   }
 
