@@ -51,9 +51,5 @@ Sem frameworks, sem complicação — só código puro e criatividade 💡
 ## 👨‍💻 Autor
 
 <p align="center">
-  Feito com ☕, ❤️ e um toque de curiosidade por <a href="https://github.com/DanielSln" target="_blank"><b>DanielSln</b></a>  
-</p>
-
-<p align="center">
-  <a href="https://danielsln.github.io/Prompts-Manager/">🧠 Acesse o Prompt Manager</a>
+  Feito por <a href="https://github.com/DanielSln" target="_blank"><b>DanielSln</b></a>  
 </p>
