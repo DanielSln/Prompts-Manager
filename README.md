@@ -3,12 +3,6 @@
 </p>
 
 <p align="center">
-  <a href="https://danielsln.github.io/Prompts-Manager/">
-    <img alt="Site" src="https://img.shields.io/badge/Acesse_o_App-Online-blueviolet?style=for-the-badge">
-  </a>
-</p>
-
-<p align="center">
   <a href="#-sobre-o-projeto">Sobre o projeto</a> •
   <a href="#-funcionalidades">Funcionalidades</a> •
   <a href="#-tecnologias">Tecnologias</a> •
