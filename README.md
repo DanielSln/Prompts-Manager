@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/logo.svg" alt="Prompt Manager Logo" width="150">
+  <img src="assets/logo.svg" alt="Prompt Manager Logo" width="150">
 </p>
 
 <p align="center">
